@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Illustration from "@/public/images/page-illustration.svg";
+import Illustration from "@/public/images/Untitled design (9).svg";
 import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
 import BlurredShape from "@/public/images/blurred-shape.svg";
 
@@ -10,8 +10,8 @@ export default function PageIllustration({
 }) {
   return (
     <>
-      <div
-        className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/4"
+      {/* <div
+        className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/4 opacity-50"
         aria-hidden="true"
       >
         <Image
@@ -49,7 +49,7 @@ export default function PageIllustration({
             />
           </div>
         </>
-      )}
+      )} */}
     </>
   );
 }
