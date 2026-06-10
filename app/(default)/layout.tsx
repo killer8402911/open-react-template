@@ -5,7 +5,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import FloatingActions from "@/components/floating-actions";
 
 export default function DefaultLayout({
   children,
@@ -23,8 +25,9 @@ export default function DefaultLayout({
 
   return (
     <>
+      <Header />
       <main className="relative flex grow flex-col">{children}</main>
-
+      <FloatingActions />
       <Footer />
     </>
   );

@@ -1,24 +1,32 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title:
+    "Aeduplay — School Furniture, Writing Boards & Play Equipment Manufacturer | Chennai",
+  description:
+    "ISO-certified Chennai manufacturer of writing boards, school & preschool furniture, outdoor play equipment, soft play and playground flooring. Trusted by 1000+ institutions since 1999.",
 };
 
-import PageIllustration from "@/components/page-illustration";
 import Hero from "@/components/hero-home";
-import Workflows from "@/components/workflows";
-import Features from "@/components/features";
+import Stats from "@/components/stats";
+import Categories from "@/components/categories";
+import ClientsMarquee from "@/components/clients-marquee";
+import WhyUs from "@/components/why-us";
+import Process from "@/components/process";
 import Testimonials from "@/components/testimonials";
+import Faq from "@/components/faq";
 import Cta from "@/components/cta";
 
 export default function Home() {
   return (
     <>
-      <PageIllustration />
       <Hero />
-      {/* <Workflows /> */}
-      {/* <Features /> */}
-      {/* <Testimonials /> */}
-      {/* <Cta /> */}
+      <Stats />
+      <Categories />
+      <ClientsMarquee />
+      <WhyUs />
+      <Process />
+      <Testimonials />
+      <Faq />
+      <Cta />
     </>
   );
 }

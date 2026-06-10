@@ -1,53 +1,63 @@
-import Image from "next/image";
-import BlurredShape from "@/public/images/blurred-shape.svg";
+import Link from "next/link";
+import { site } from "@/utils/site";
 
 export default function Cta() {
   return (
-    <section className="relative overflow-hidden">
-      <div
-        className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2"
-        aria-hidden="true"
-      >
-        <Image
-          className="max-w-none"
-          src={BlurredShape}
-          width={760}
-          height={668}
-          alt="Blurred shape"
-        />
-      </div>
-      <div className="max-w6xl mx-auto px-4 sm:px-6">
-        <div className="bg-linear-to-r from-transparent via-gray-800/50 py-12 md:py-20">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-3xl font-semibold text-transparent md:text-4xl"
-              data-aos="fade-up"
+    <section className="py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <div
+          className="relative overflow-hidden rounded-[2.5rem] bg-linear-to-br from-orange-500 via-orange-600 to-rose-600 px-6 py-16 text-center shadow-2xl shadow-orange-600/30 md:px-16 md:py-20"
+          data-aos="zoom-in"
+        >
+          {/* Decorations */}
+          <div
+            className="pointer-events-none absolute -top-24 -left-16 h-64 w-64 rounded-full bg-white/10 blur-2xl"
+            aria-hidden="true"
+          />
+          <div
+            className="pointer-events-none absolute -right-20 -bottom-28 h-72 w-72 rounded-full bg-amber-300/20 blur-2xl"
+            aria-hidden="true"
+          />
+          <svg
+            className="pointer-events-none absolute top-8 right-10 h-16 w-16 animate-float text-white/20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M12 1l2.7 5.6 6.3.9-4.5 4.4 1 6.1-5.5-2.9L6.5 18l1-6.1L3 7.5l6.3-.9L12 1Z" />
+          </svg>
+          <svg
+            className="pointer-events-none absolute bottom-10 left-12 h-10 w-10 animate-float-slow text-white/20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+
+          <h2 className="relative mx-auto max-w-2xl font-nacelle text-3xl font-semibold text-white md:text-4xl">
+            Ready to build a campus children run towards?
+          </h2>
+          <p className="relative mx-auto mt-4 max-w-xl text-lg text-orange-100">
+            Tell us about your space — get a free consultation, layout
+            suggestion and transparent quotation within 48 hours.
+          </p>
+          <div className="relative mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              href="/contact"
+              className="btn bg-white text-base font-semibold text-orange-700 shadow-lg hover:bg-orange-50 active:scale-[0.98]"
             >
-              Join the content-first platform
-            </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay={400}>
-                <a
-                  className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                  href="#0"
-                >
-                  <span className="relative inline-flex items-center">
-                    Start Building
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                      -&gt;
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay={600}>
-                <a
-                  className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                  href="#0"
-                >
-                  Schedule Demo
-                </a>
-              </div>
-            </div>
+              Get Your Free Quote
+            </Link>
+            <a
+              href={`tel:${site.phoneHref}`}
+              className="btn border border-white/40 bg-white/10 text-base text-white backdrop-blur-sm hover:bg-white/20 active:scale-[0.98]"
+            >
+              <svg className="mr-2 h-4 w-4 fill-current" viewBox="0 0 16 16">
+                <path d="M3.6 1.3 5.5 1a1 1 0 0 1 1 .6L7.6 4a1 1 0 0 1-.3 1.2l-1 .8a9.5 9.5 0 0 0 3.7 3.7l.8-1a1 1 0 0 1 1.2-.3l2.4 1.1a1 1 0 0 1 .6 1l-.3 1.9a1 1 0 0 1-1 .8A12.8 12.8 0 0 1 2.8 2.3a1 1 0 0 1 .8-1Z" />
+              </svg>
+              {site.phone[0]}
+            </a>
           </div>
         </div>
       </div>
