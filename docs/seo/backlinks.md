@@ -127,8 +127,10 @@ The foundation. People link to things that make *their* article better:
   for the link. Highest-conversion outreach that exists.
 - **Skyscraper technique** — find content with many backlinks, build something
   substantially better, pitch it to the sites linking to the original.
-- **Expert quotes / journalist requests** (Connectively ex-HARO, Qwoted, Featured,
-  #journorequest) — answer journalist queries, get cited with a link.
+- **Expert quotes / journalist requests** — answer journalist queries and get
+  cited with a link. Platforms: HARO (shut down as Connectively in Dec 2024,
+  relaunched by Featured in April 2025), Qwoted, Source of Sources (SOS),
+  #journorequest on X.
 - **Partnerships, integrations, suppliers, communities** — legitimate business
   relationships that naturally produce mentions and links.
 - **Podcasts and interviews** — show-notes pages link to guests.
@@ -242,9 +244,10 @@ i.e. it can publish content. To make backlinks work for it:
 2. **Use real `<a>` links** — Next `<Link>` renders `<a href>`, which is
    crawlable. Avoid button+router.push for anything that should be indexed, and
    use descriptive anchor text in internal links.
-3. **Create linkable assets via Sanity** — a blog with original insights, data
-   posts, free tools/templates pages. A template/landing site earns links through
-   useful content, not its homepage.
+3. **Create linkable assets via Sanity** — the blog content model already exists
+   (`sanity/schemaTypes/`: post, author, category, block content); publish
+   original insights, data posts, and free tools/templates pages there. A
+   template/landing site earns links through useful content, not its homepage.
 4. **Earn the first links**: submit to relevant galleries/directories (e.g. web
    design showcases, "built with Next.js" lists), write guest posts, get listed
    on resource pages, answer expert-quote requests, and pursue unlinked mentions.

@@ -28,7 +28,7 @@ Key facts to remember when doing any SEO work on this site:
 - Earning links: original research/statistics pages, free tools, definitive
   guides, digital PR, guest posts on reputable relevant sites, broken-link
   building, resource pages, unlinked-mention reclamation, expert quotes
-  (Connectively/Qwoted), podcasts, partnerships.
+  (HARO/Qwoted/SOS), podcasts, partnerships.
 - Timeline: a link takes ~4–12 weeks to affect rankings; campaigns show full
   effect in 3–6 months; new domains ramp slower.
 - AI-search era: strong backlink profiles also increase citations in AI
